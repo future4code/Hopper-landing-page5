@@ -98,7 +98,7 @@ p,li p:hover{
     width: auto;
 }
 .carrinho h1{
-    color: #947868;
+    color: #736056;
     margin: 20px;
     border: 20px;
     
@@ -119,12 +119,19 @@ p,li p:hover{
     border-left: 0;
     border-right: 0;
     border-top: 0;
+    padding-bottom: 20px;
 }
 .produto-selecionado{
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-flow: row;
     align-items: center;
+}
+.produto-selecionado img{
+    border-radius: 5px;
+    box-shadow: 2px 2px #6c5649;
+    margin-right: 5px;
+    padding: 0;
 }
 .quantidade{
     display: grid;
