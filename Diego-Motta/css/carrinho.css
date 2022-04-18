@@ -1,7 +1,9 @@
 body{
+
     margin: 0;
     font-family: 'Sora', sans-serif;
     background-color: #F9F6F6;
+
 }
 a{
     text-decoration: none;
@@ -21,6 +23,7 @@ nav{
     padding: 0 20px;
     justify-content: space-around;
     align-items: center;
+
 }
 
 nav, ul{
@@ -96,6 +99,7 @@ p,li p:hover{
     align-items: center;
     text-align: center;
     width: auto;
+
 }
 .carrinho h1{
     color: #736056;
@@ -222,20 +226,24 @@ p,li p:hover{
 /* FOOTER */
 
 .footer-container{
-    align-items: center;
+    display: grid;
+    align-items: initial;
     align-content: center;
     justify-content: center;
-
-    width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+    width: auto;
     gap: 80px;
-    display: flex;
+    margin-top: auto;
     background-color: #e9e2df;
-    position: absolute;
     bottom: 0px;
     left: 0px;
-
+    align-self: end;
+    grid-column: 2;
+    padding: 10px;
 }
-
+.dados-container{
+    justify-self: center;
+}
 .dados-container p{
     color: #947868;
     font-size: 12px;
@@ -273,6 +281,8 @@ img{
     }
     
     .footer-container{
-        display: none;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10px;
     }
 }
