@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Sora', sans-serif;
-
+    background-color: #F9F6F6;
 }
 a{
     text-decoration: none;
@@ -80,7 +80,7 @@ h1{
 p,li p:hover{
     color: #6c5649;
     transition: ease-in 0.4;
-    cursor: pointer;
+
 }
 
 /* MAIN */
@@ -95,21 +95,36 @@ p,li p:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: auto;
+}
+.carrinho h1{
+    color: #947868;
+    margin: 20px;
+    border: 20px;
+    
 }
 .selecao{
     display: grid;
     grid-template-columns: auto;
     grid-auto-flow: row;
+    width: 85vw;
 }
 .produtos{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+    margin: 20px;
+    margin-bottom: 50px;
+    justify-content: center;
+    border: 1px groove #EEEDED;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
 }
 .produto-selecionado{
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-flow: row;
+    align-items: center;
 }
 .quantidade{
     display: grid;
@@ -120,6 +135,7 @@ p,li p:hover{
 }
 .quantidade-titulo{
     grid-area: qtd;
+    font-weight: bold;
 }
 .menos{
     grid-area: menos;
@@ -127,7 +143,9 @@ p,li p:hover{
 }
 .qtd-itens{
     grid-area: num;
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 15px;
 }
 .mais{
     grid-area: mais;
@@ -136,12 +154,20 @@ p,li p:hover{
 .quantidade img{
     width: 30px;
     height: 30px;
+    cursor: pointer;
+}
+.preco{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
 }
 .informacoes{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
     grid-auto-flow: row;
     column-gap: 10vw;
+    justify-content: center;
+    row-gap: 50px;
 }
 .inputs{
     display: grid;
@@ -149,18 +175,25 @@ p,li p:hover{
 }
 .botoes{
     width: 200px;
-    justify-self: right;
+    padding: 6px;
+    background-color: #947868;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
 }
 .linhas{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+
+}
+.preco-total{
     border: 1px groove #EEEDED;
     border-left: 0;
     border-right: 0;
+    border-bottom: 0;
 }
-.trabalho .colunas{
-    flex: 10px;
-}
+
 
 
 

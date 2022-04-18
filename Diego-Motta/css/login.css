@@ -84,7 +84,7 @@ button{
 p,li p:hover{
     color: #6c5649;
     transition: ease-in 0.4;
-    cursor: pointer;
+
 }
 
 /* MAIN */
@@ -107,64 +107,44 @@ p,li p:hover{
 
 .dados-do-usuario{
     display: grid;
-    overflow: hidden;
+    align-self: center;
     grid-gap: 20px;
     margin: 20px;
-    grid-template-areas: "nome sobrenome"
-                        "end end"
-                        "num comp"
-                        "cid est"
-                        "cep cep"
-                        "em em"
-                        "sen sen";
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
 }
 .dados-do-usuario input{
-   font-size: 20px;
-   font-weight: bold;
-   font-style: initial; 
+    font-size: 20px;
+    font-weight: bold;
+    font-style: initial;
+    width: auto;
 }
-#nome{
-    grid-area: nome;
+.dados-do-usuario label{
+    font-size: 20px;
+    font-weight: normal;
+    font-style: initial;
+    text-align: left;
+    color: #947868; 
 }
-#sobrenome{
-    grid-area: sobrenome;
-}
-#endereco{
-    grid-area: end;
-}
-#numero{
-    grid-area: num;
-}
-#completemento{
-    grid-area: comp;
-}
-#cidade{
-    grid-area: cid;
-}
-#estado{
-    grid-area: est;
-}
-#cep{
-    grid-area: cep;
-}
-#email{
-    grid-area: em;
-}
-#senha{
-    grid-area: sen;
-}
+
 .link-enviar{
-    width: 20vw;
+    display: grid;
+    width: 30vw;
+    height: 10vh;
     justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
 #btn-02{
-    padding: 6px;
+    padding: 5px;
     background-color: #947868;
     border-radius: 4px;
     color: #FFF;
     justify-self: center;
-    width: auto;
+    width: 20vw;
+    text-align: center;
 }
 
 
@@ -203,10 +183,7 @@ p,li p:hover{
 }
 
 
-#footer-titulo{screen and ()
-    color: #947868;
-    font-weight: 500;
-}
+
 
 img{
     padding-bottom: 15px;
@@ -235,16 +212,5 @@ img{
     .footer-container{
         display: none;
     }
-    .dados-do-usuario{
-        grid-template-areas: "nome"
-        "sobrenome"
-        "end"
-        "num" 
-        "comp"
-        "cid" 
-        "est"
-        "cep"
-        "em"
-        "sen";
-    }
+
 }
