@@ -84,7 +84,6 @@ button{
 p,li p:hover{
     color: #6c5649;
     transition: ease-in 0.4;
-    cursor: pointer;
 }
 
 /* MAIN */
@@ -98,10 +97,10 @@ p,li p:hover{
     justify-content: center;
     text-align: center;
     row-gap: 50px;
-    width: auto;
+    width: 85vw;
 }
 .criar-conta h1{
-    color: #947868;
+    color: #736056;
     font-weight: bold;
 }
 
@@ -110,6 +109,7 @@ p,li p:hover{
     overflow: hidden;
     grid-gap: 20px;
     margin: 20px;
+    width: auto;
     grid-template-areas: "nome sobrenome"
                         "end end"
                         "num comp"
@@ -120,9 +120,16 @@ p,li p:hover{
 
 }
 .dados-do-usuario input{
-   font-size: 20px;
-   font-weight: bold;
-   font-style: initial; 
+    font-size: 18px;
+    font-weight: normal;
+    font-style: initial;
+    color: #6c5649; 
+}
+.dados-do-usuario select{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: initial;
+    color: #6c5649; 
 }
 #nome{
     grid-area: nome;
@@ -155,7 +162,7 @@ p,li p:hover{
     grid-area: sen;
 }
 .link-enviar{
-    width: 10vw;
+    width: 20vw;
     justify-self: center;
 }
 #btn-02{
@@ -164,7 +171,7 @@ p,li p:hover{
     border-radius: 4px;
     color: #FFF;
     justify-self: center;
-
+    width: auto;
 }
 
 
@@ -213,7 +220,7 @@ img{
     width: 125px;
 }
 
-@media (max-width:930px) {
+@media (max-width:900px) {
     nav, ul{
         flex-direction: column;
         align-items: unset;
@@ -234,5 +241,17 @@ img{
     
     .footer-container{
         display: none;
+    }
+    .dados-do-usuario{
+        grid-template-areas: "nome"
+        "sobrenome"
+        "end"
+        "num" 
+        "comp"
+        "cid" 
+        "est"
+        "cep"
+        "em"
+        "sen";
     }
 }

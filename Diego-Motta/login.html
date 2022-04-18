@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>4Food</title>
+    <title>4Food - Login</title>
 </head>
 <body>
     <nav class="container">
@@ -40,7 +40,7 @@
             </a>       
         </ul>
 
-        <footer class="footer-container">
+        <!-- <footer class="footer-container">
 
             <div class="dados-container"> 
                 <p href="#" id="footer-titulo">EMPRESA</p>
@@ -58,7 +58,23 @@
                 <p href="#" id="footer-titulo">BAIXE NOSSO APLICATIVO</p>
                 <img src="./imgs/APP.png" alt="">
             </div>
-        </footer>
+        </footer> -->
     </nav>
+    <section class="criar-conta">
+        <h1 class="titulo">Faça seu Login</h1>
+        <form class="dados-do-usuario">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="seuemail@email.com">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="********">
+        </form>
+        <a href="#" class="link-enviar">
+            <div class="btn">
+                <p id="btn-02">ENTRAR</p>
+            </div>
+        </a>
+        <p class="cadastro">Não tem conta? <a href="/criar-conta.html">Cadastre-se</a></p>      
+    </section>
+
 </body>
 </html>
