@@ -278,20 +278,24 @@ details[open] summary {
 /* FOOTER */
 
 .footer-container{
-    align-items: center;
+    display: grid;
+    align-items: initial;
     align-content: center;
     justify-content: center;
-
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+    width: auto;
     gap: 80px;
-    display: flex;
+    margin-top: auto;
     background-color: #e9e2df;
-    position: absolute;
     bottom: 0px;
     left: 0px;
-
+    align-self: end;
+    grid-column: 2;
+    padding: 10px;
 }
-
+.dados-container{
+    justify-self: center;
+}
 .dados-container p{
     color: #947868;
     font-size: 12px;
@@ -329,7 +333,9 @@ img{
     }
     
     .footer-container{
-        display: none;
+        justify-content: center;
+        text-align: center;
+        row-gap: 10px;
     }
     .assinatura-kit img{
         display: none;
