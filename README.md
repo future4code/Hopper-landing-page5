@@ -1,2 +1,2 @@
 # landing-page-template
-https://guttural-box.surge.sh
+elated-digestion.surge.sh
