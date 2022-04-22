@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>4Food - Carrinho</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="logo">
+            <a href="/index.html"><h1 href="#" >4FOOD</h1></a>
+        </div>
+        <button>&#9776;</button>
+
+        <ul>
+            <li>
+                <a href="#"><p class="item-nav-bar">PRODUTOS</p></a>
+            </li>
+            <li>
+                <a href="/carrinho.html"><p class="item-nav-bar">CARRINHO</p></a>
+            </li>
+            <li>
+               <a href="/assinaturas.html"><p class="item-nav-bar">ASSINATURAS</p></a>
+            </li>
+            <li>
+                <a href="#"><p class="item-nav-bar">SOBRE NÓS</p></a>
+            </li>
+            <li>
+                <a href="/criar-conta.html"><p class="item-nav-bar">CRIAR CONTA</p></a>
+            </li>
+            <a href="/login.html">
+                <nav class="btn">
+                    <p id="btn-01">ENTRAR</p>
+                </nav>
+            </a>       
+        </ul>
+
+
+    </nav>
+    <section class="carrinho">
+        <h1>Carrinho</h1>
+        <div class="selecao">
+            <div class="produtos">
+                <div class="produto-selecionado">
+                    <img src="/imgs/dadinhos-de-tapioca.jpg" alt="">
+                    <p>Dadinhos De Tapioca com Parmesão - 100g</p>
+                </div>
+                <div class="quantidade">
+                    <p class="quantidade-titulo">Quantidade</p>
+                    <img src="/imgs/menos.png" alt="" class="menos">
+                    <p class="qtd-itens">1</p>
+                    <img src="/imgs/mais.png" alt="" class="mais">
+                </div>
+                <div class="preco">
+                    <p><b>Preço a Vista</b></p>
+                    <p>R$ 9,99</p>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="produto-selecionado">
+                    <img src="/imgs/kit-4food1.jpg" alt="">
+                    <p>Assinatura - kit 4food almoço - 1 mês</p>
+                </div>
+                <div class="quantidade">
+                    <p class="quantidade-titulo">Quantidade</p>
+                    <img src="/imgs/menos.png" alt="" class="menos">
+                    <p class="qtd-itens">1</p>
+                    <img src="/imgs/mais.png" alt="" class="mais">
+                </div>
+                <div class="preco">
+                    <p><b>Preço a Vista</b></p>
+                    <p>R$ 349,80</p>
+                </div>
+            </div>
+        </div>
+        <div class="informacoes">
+            <div class="inputs">
+                <input type="text" class="cep" placeholder="CEP">
+                <button class="botoes">Buscar</button>
+                <input type="text" class="cupom" placeholder="CUPOM DE DESCONTO">
+                <button class="botoes">Aplicar</button>
+            </div>
+            <div class="preco-final">
+                <div class="linhas">
+                    <div class="colunas"><p><b>Valor dos Produtos:</b></p></div>
+                    <div class="colunas"><p>R$ 359,79</p></div>
+                </div>
+                <div class="linhas">
+                    <div class="colunas"><p><b>Frete:</b></p></div>
+                    <div class="colunas"><p>R$ 0,00</p></div>
+                </div>
+                <div class="linhas">
+                    <div class="colunas"><p><b>Cupom de Desconto:</b></p></div>
+                    <div class="colunas"><p>R$ 0,00</p></div>
+                </div>
+                <div class="linhas">
+                    <div class="preco-total"><p><b>Total:</b></p></div>
+                    <div class="preco-total"><p>R$ 359,79</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-container">
+
+        <div class="dados-container"> 
+            <p href="#" id="footer-titulo">EMPRESA</p>
+            <a href="/sobre-nos.html" a target="_blank"><p>SOBRE NÓS</p></a>
+        </div>
+
+        <div class="dados-container">
+            <p href="#" id="footer-titulo">SOCIAL MEDIA</p>
+            <a href="https://www.facebook.com" a target="_blank"><p>FACEBOOK</p></a>
+            <a href="https://www.instagram.com" a target="_blank"><p>INSTAGRAM</p></a>
+            <a href="https://www.twitter.com" a target="_blank"><p>TWITTER</p></a>
+        </div>
+
+        <div class="dados-container">
+            <p href="#" id="footer-titulo">BAIXE NOSSO APLICATIVO</p>
+            <img src="./imgs/APP.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

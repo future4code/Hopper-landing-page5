@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  }
+  body,
+  html {
+    height: 100%;
+
+    font-family: "Sora", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+  }
+  
+  ul {
+    list-style: none;
+
+
+  }
+  
+  nav {
+    background-color: #f4f2f2;
+    justify-content: space-around;
+    align-items: center;
+    padding:15px;
+
+  }
+  
+  .container h1,
+  p {
+    color: #fff;
+  }
+  
+  nav,
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  li {
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+  }
+  
+  .container h1 {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+  }
+  
+  .logo h1 {
+    color: #947868;
+  }
+  .logo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  
+  .item-nav-bar {
+    color: #947868;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  #btn-01 {
+    padding: 6px;
+    background-color: #947868;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  p,
+  li p:hover {
+    color: #6c5649;
+    transition: ease-in 0.4;
+    cursor: pointer;
+  }
+  
+  
+  /* FOOTER */
+  
+  .footer-container {
+
+    padding-top: 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  
+    height: 150px;
+    width: 100vw;
+    gap: 80px;
+    display: flex;
+    background-color: #f4f2f2;
+  }
+  
+  .dados-container p {
+    padding-bottom: 10px;
+    color: #947868;
+    font-size: 12px;
+    font-weight: 200;
+  }
+  
+  #footer-titulo {
+    color: #947868;
+    font-weight: 500;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  .titulo-produtos{
+    display: flex;
+    justify-content: center;
+
+
+  }
+  .titulo-produtos h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #947868;
+    font-size: 30px;
+  }
+  
+  
+  .produtos-container{
+    flex-wrap: wrap;
+
+    gap:20px;
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+    display: flex;
+    padding-bottom: 50px;
+
+
+   
+
+    border-radius: 20px;
+    padding-top: 30px;
+
+
+  }
+.produtos-card{
+display: flex;
+flex-direction: column;
+}
+
+.produtos-card img{
+
+  width: 250px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.produtos-card p{
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  background-color: orange;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+
+}
+
+.acoes{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 250px;
+  height: 55px;
+}
+
+
+.acoes a{
+color: #fff;
+  font-size: 12px;
+}
+
+.add{
+  background-color: green;
+  padding: 15px;
+}
+
+.about{
+  background-color: red;
+  padding: 15px;
+}
+
+.dados-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 20px;
+}
+
+.dados-container img{
+  width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1005px) {
+  
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    nav,
+    ul {
+      flex-direction: column;
+      align-items: unset;
+    }
+  
+    ul {
+      text-align: center;
+      align-items: center;
+    }
+  
+    nav {
+      padding-top: 10px;
+    }
+  
+    button {
+      display: flex;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .dados-container p {
+      font-size: 8px;
+    }
+    .planos-imgs {
+      display: flex;
+    }
+  
+    .planos-imgs img {
+      width: 190px;
+    }
+  
+    .amostras-container {
+      display: flex;
+      text-align: center;
+      align-content: center;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .vitrine a {
+      font-size: 12px;
+    }
+    .vitrine {
+    }
+    .vitrine img {
+      display: flex;
+      align-self: center;
+      width: 80px;
+      padding-right: 10px;
+    }
+  
+    .main-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 120px 80px 200px 150px;
+    }
+  
+    .slogans-container h1 {
+      font-size: 25px;
+    }
+  
+    .slogans-container h4 {
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+    .endereco {
+      width: 250px;
+    }
+  
+    .servicos-container {
+      display: flex;
+      justify-content: start;
+    }
+  
+    .titulo-produtos h2{
+      text-align: center;
+    }
+  
+  }
+  
+  
